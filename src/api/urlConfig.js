@@ -1,5 +1,5 @@
 
-const serverRoot = 'http://127.0.0.1:9050'
+const serverRoot = process.env.NODE_ENV !== 'production'? 'http://127.0.0.1:9050':'http://118.24.153.41:5000';
 
 export const banner = serverRoot + '/banner'
 
